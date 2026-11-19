@@ -51,7 +51,7 @@ body {
     font-weight: 400;
 }
 
-.sekcie a:hover {
+.sekcie a:hover, .account a:hover {
     color: #b3b3b3;
 }
 
@@ -90,4 +90,92 @@ body {
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    gap: 5px;
+}
+
+.account a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.pfp {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.scroll-icon {
+    width: 15px;
+    height: 15px;
+}
+
+.container-ST {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    position: absolute;
+    top: 150px;
+    left: 90px;
+}
+
+.ST-header {
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    font-size: 100px;
+    letter-spacing: 2px;
+    color: white;
+    margin: 0px;
+}
+
+.ST-subtitle {
+    font-family: 'ITC Avant Garde Gothic', 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #cccccc;
+    margin-top: 0px;
+}
+.watch-button,
+.add-button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+}
+.watch-button {
+  background-color: #7c5df9;
+  border: 1px solid #7c5df9;
+  margin-right: 12px;         
+}
+.watch-button:hover {
+  background-color: #6a4ae8;
+}
+.add-button {
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+.add-button:hover {
+  background-color: rgba(255, 255, 255, 0.22);
+  border-color: #ffffff;
+}
+.ST-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-top: 20px;
 }
